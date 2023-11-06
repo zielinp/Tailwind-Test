@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 // import {Button, Navbar, Footer, Stats }  from './components'
-import LoginForm from './components/LoginForm'
+import {LoginForm} from './components'
 // import styles from './style'
 
 // import React from 'react';
@@ -80,7 +80,7 @@ export default function App() {
     //   </div>
     // </div>
 
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+    <div className=" flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       {/* <Navbar />
       <Stats />
            
@@ -96,7 +96,7 @@ export default function App() {
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt="Your Company"
           /> */}
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-white">
             Sign in to your account
           </h2>
         </div>
