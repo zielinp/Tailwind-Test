@@ -14,7 +14,6 @@ const LoginForm = () => {
     const [isButtonDisabled, setButtonDisabled] = useState(true);
 
     useEffect(() => {
-        // Sprawdzanie, czy przycisk powinien być wyłączony
         const isDisabled = username === '' || password === '';
         setButtonDisabled(isDisabled);
       }, [username, password]);
@@ -36,20 +35,11 @@ const LoginForm = () => {
 
     const handleUsernameChange = (newUsername: string) => {
         setUsername(newUsername);
-        updateButtonDisabledState(newUsername, password);
     };
 
     const handlePasswordChange = (newPassword: string) => {
         setPassword(newPassword);
-        updateButtonDisabledState(username, newPassword);
     };
-
-    const updateButtonDisabledState = (newUsername: string, newPassword: string) => {
-        const isDisabled = newUsername === '' || newPassword === '';
-        setButtonDisabled(isDisabled);
-    };
-
-
 
     return (
         <div className="space-y-6">
